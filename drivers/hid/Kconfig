@@ -363,12 +363,6 @@ config HID_FT260
 	  To compile this driver as a module, choose M here: the module
 	  will be called hid-ft260.
 
-config HID_FTEC
-	tristate "Fanatec Wheels"
-	depends on USB_HID
-	help
-	  Support Fanatec racing wheels.
-
 config HID_GEMBIRD
 	tristate "Gembird Joypad"
 	depends on HID
@@ -1265,6 +1259,8 @@ config HID_MCP2221
 	will be called hid-mcp2221.ko.
 
 source "drivers/hid/xone/Kconfig"
+
+source "drivers/hid/ftec/Kconfig"
 
 endmenu
 

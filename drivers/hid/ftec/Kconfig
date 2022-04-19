@@ -1,0 +1,5 @@
+config HID_FTEC
+        tristate "Fanatec Wheels"
+        depends on USB_HID
+        help
+          Support Fanatec racing wheels.
